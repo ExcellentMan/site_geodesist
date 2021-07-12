@@ -1,0 +1,307 @@
+body{
+	margin: 0;
+	font-family: Roboto, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+
+/* ======= Head ======= */
+
+.header {
+    min-width: 500px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* ======= Head Top ======= */
+
+.header-top {
+    width: 100vw;
+    min-width: 550px;
+    height: 40px;
+
+    padding-right: 50px;
+    padding-left: 50px;
+
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: red;
+}
+
+
+.head-contacts {
+    display: flex;
+}
+
+.head-contacts div{
+    margin: auto 0;
+
+}
+
+
+.head-contacts img{
+    margin: auto 5;
+    height: 25px;
+}
+
+.head-tel a{
+    color: black;
+    text-decoration: none;
+}
+
+.head-tel img {
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+}
+/* ======= Head Bottom ======= */
+.header-bottom {
+    width: 100vw;
+    height: 60px;
+    min-width: 550px;
+
+    padding-right: 50px;
+    padding-left: 50px;
+
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.nav-link {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+
+    margin: 0 10 0 10;
+
+    padding: 10;
+}
+
+
+/* ======= Body ======= */
+
+main {
+    height: 500px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+
+.parall-layer {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+
+.background-parall {
+    width: 100%; 
+    height: 100vh;
+    
+    background: url(img/Image1.jpg) no-repeat left;
+    background-size: cover;
+
+}
+.background-parall::before {
+    content: "";
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px) brightness(60%);
+
+}
+
+
+
+.parall-layer-base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+.parall-layer-back {
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: -1;
+
+  }
+
+  .parall-layer-back img {
+    position: absolute;
+    top: -20vh;
+    /* left: -15%; */
+    width: 100%;
+    background-size: cover;
+  }
+
+.paragraph {
+    width: 100%; 
+    height: 100vh;
+
+    padding-top: 50px;
+
+    /* background-color: rgb(161, 161, 161); */
+}
+
+.paragraph:nth-child(even) {
+    background-color: rgb(114, 114, 114);
+}
+/* ======= PRE section ======= */
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    transform: translate(0%, 50%);
+    box-shadow: inset 0px 0px 40px 40px #ec161600;
+}
+
+
+
+.main-page-title {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.main-page-title span {
+    color: red;
+}
+
+.home-text {
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+
+
+
+
+
+/* ======= 1st section ======= */
+
+.title-section {
+    text-align: center;
+    padding: 20;
+    font-size: 35px;
+}
+
+.title-section::after {
+    content: "";
+	display: block;
+	margin: 0 auto;
+	width: 180px;
+	height: 1px;
+    background-color: #000;
+}
+
+.subtitle-section {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    
+    margin-bottom: 30px;
+}
+
+.about {
+    height: 75vh;
+}
+
+.about ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    padding: 0 20;
+
+}
+
+.about li {
+    width: 200px;
+    height: 200px;
+    min-width: 150px;
+
+    padding: 25 15;
+
+    margin: 10;
+
+    flex-basis: 15%;
+    
+    text-align: center;
+    list-style-type: none;
+    vertical-align: middle;
+
+    border-radius: 10px;
+}
+
+.about li:nth-child(odd) {
+    border: black solid 1px;
+    background-color: rgba(255, 67, 67, 0.144);
+    backdrop-filter: blur(10px);
+}
+
+.about li:nth-child(even) {
+    border: black solid 1px;
+    background-color: rgba(67, 186, 255, 0.144);
+    backdrop-filter: blur(10px);
+   
+}
+
+.about img {
+    width: 5vw;
+}
+
+.title-about {
+    font-size: 12px;
+    font-weight: bold;
+
+    padding: 30 0;
+}
+
+/* ======= Footer ======= */
+
+
+
+
+
