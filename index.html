@@ -2,36 +2,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Geodesist</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script> -->
-    <!-- <script type="text/javascript" src="script.js"></script> -->
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header-top">
-            <div class="head-contacts logo"><span>Geo</span>desist</div>
+            <div class="head-contacts logo" ><a href="#" data-scroll = "#main"><span>Geo</span>desist</div></a>
             <div class="head-contacts">
                 <div>Мы в соцсетях:</div>
-                    <a href="http://vk.com"><img src="img/vkontakte.png" alt=""></a> 
-                    <a href="http://web.telegram.org/z/"><img src="img/telegram.png" alt=""></a>
-                    <a href="http://whatsapp.com"><img src="img/whatsapp.png" alt=""></a>
+                    <a href="http://vk.com"><img src="assets/img/vkontakte.png" alt=""></a> 
+                    <a href="http://web.telegram.org/z/"><img src="assets/img/telegram.png" alt=""></a>
+                    <a href="http://whatsapp.com"><img src="assets/img/whatsapp.png" alt=""></a>
             </div>
-            <div class="head-tel"><a href="tel:+79991110011"><img src="img/phone-call.png" alt="Phone" width="15px">+79991110011</a></div>
+            <div class="head-tel"><a href="tel:+79991110011"><img src="assets/img/phone-call.png" alt="Phone" width="15px">+79991110011</a></div>
         </div>
         <nav class="header-bottom scrollto">
-            <a class="nav-link flowing-scroll" href="#main">Главная</a>
-            <a class="nav-link flowing-scroll" href="#about">О нас</a>
-            <a class="nav-link flowing-scroll" href="#services">Услуги</a>
-            <a class="nav-link flowing-scroll" href="#contacts">Контакты</a>
+            <a class="nav-link" href="#" data-scroll = "#main">Главная</a>
+            <a class="nav-link" href="#" data-scroll = "#about">О нас</a>
+            <a class="nav-link" href="#" data-scroll = "#services">Услуги</a>
+            <a class="nav-link" href="#" data-scroll = "#contacts">Контакты</a>
         </nav>
     </header>
     <main>
-        <div class="parall-layer parall-layer-back"><img src="img/Image5.jpg" alt=""></div>
+        <div class="parall-layer parall-layer-back"><img src="assets/img/Image5.jpg" alt=""></div>
 
-        <div class="background-parall parall-layer-base flowing-scroll " id="main">
+        <div class="background-parall parall-layer-base " id="main">
             <div class="container animate__animated animate__fadeInDown">
                 <p class="home-text">Геодезическая компания</p>
                 <h1 class="main-page-title"><span>Geo</span>desist</h1>
@@ -41,39 +39,111 @@
 
         <div class="parall-layer parall-layer-base">
 
-        <section class="paragraph about parall-layer-base flowing-scroll" id="about">
-            <h1 class="title-section">О нас</h1>
-            <h2 class="subtitle-section">Компания является ведущей в области геодезических измерений в Нижегородской области</h2>
-            <ul>
-                <li class="animate__animated animate__fadeInDown animate__delay-1s">
-                    <img src="img/networking.svg" alt="">
-                    <h3 class="title-about">На рынке с 2005 года</h3>
-                </li>
-                <li class="animate__animated animate__fadeInDown animate__delay-1s">
-                    <img src="img/certification.svg" alt="">
-                    <h3 class="title-about">Более 1500 выполненых заказов</h3>
-                </li>
-                <li class="animate__animated animate__fadeInDown animate__delay-1s">
-                    <img src="img/guarantee.svg" alt="">
-                    <h3 class="title-about">Гарантия качества и точности измерений</h3>
-                </li>
-                <li class="animate__animated animate__fadeInDown animate__delay-1s">
-                    <img src="img/draft.svg" alt="">
-                    <h3 class="title-about">Оперативно предоставляем все необходимые чертежи</h3>
-                </li>
-                <li class="animate__animated animate__fadeInDown animate__delay-1s">
-                    <img src="img/customer.svg" alt="">
-                    <h3 class="title-about">Сотни довольных клиентов</h3>
-                </li>
-            </ul>
-        </section>
-        <section class="paragraph flowing-scroll" id="servises">
-            
-        </section>
+            <section class="paragraph about parall-layer-base" id="about">
+                <div>
+                    <h1 class="title-section">О нас</h1>
+                    <h2 class="subtitle-section">Компания является ведущей в области геодезических измерений в Нижегородской области</h2>
+                </div>
+                <ul>
+                    <li class="animate__animated animate__fadeInDown animate__delay-1s">
+                        <img src="assets/img/networking.svg" alt="">
+                        <h3 class="title-about">На рынке с 2005 года</h3>
+                    </li>
+                    <li class="animate__animated animate__fadeInDown animate__delay-1s">
+                        <img src="assets/img/certification.svg" alt="">
+                        <h3 class="title-about">Более 1500 выполненых заказов</h3>
+                    </li>
+                    <li class="animate__animated animate__fadeInDown animate__delay-1s">
+                        <img src="assets/img/guarantee.svg" alt="">
+                        <h3 class="title-about">Гарантия качества и точности измерений</h3>
+                    </li>
+                    <li class="animate__animated animate__fadeInDown animate__delay-1s">
+                        <img src="assets/img/draft.svg" alt="">
+                        <h3 class="title-about">Оперативно предоставляем все необходимые чертежи</h3>
+                    </li>
+                    <li class="animate__animated animate__fadeInDown animate__delay-1s">
+                        <img src="assets/img/customer.svg" alt="">
+                        <h3 class="title-about">Сотни довольных клиентов</h3>
+                    </li>
+                </ul>
+            </section>
+            <section class="paragraph services" id="services">
+                <div>
+                    <h1 class="title-section">Услуги</h1>
+                    <h2 class="subtitle-section">Компания является ведущей в области геодезических измерений в Нижегородской области</h2>
+                </div>
+                <div class="services-body">
+                    <div class="services__item  services__item--border">
+                        <img class="services__icon" src="assets/img/rule.png" alt="">
+
+                        <div class="services__title">Межевание</div>
+                        <div class="services__text">Межевание подразумевает проведение нормативных измерительных мероприятий, целью которых является юридическое закрепление границ земельного участка.</div>
+                    </div>
+                    <div class="services__item  services__item--border">
+                        <img class="services__icon" src="assets/img/camera.png" alt="">
+
+                        <div class="services__title">Топографическая съёмка</div>
+                        <div class="services__text">Топографическая съемка земельного участка – это незаменимый инструмент в составлении пакета проектной документации.</div>
+                    </div>
+                    <div class="services__item  services__item--border">
+                        <img class="services__icon" src="assets/img/measure.png" alt="">
+
+                        <div class="services__title">Строительная геодезия</div>
+                        <div class="services__text">Строительная геодезия – важная группа работ, необходимая для обеспечения качественного строительства объектов различного плана.</div>
+                    </div>
+                    <div class="services__item services__item--border">
+                        <img class="services__icon" src="assets/img/hotel.png" alt="">
+
+                        <div class="services__title">Инженерные изыскания</div>
+                        <div class="services__text">Это комплекс работ по изучению объекта строительства на предмет природных и техногенных качеств с составлением заключения о прогнозированном взаимодействии окружающих факторов с объектом.</div>
+                    </div>
+                    <div class="services__item services__item--border">
+                        <img class="services__icon" src="assets/img/floor-plan.png" alt="">
+
+                        <div class="services__title">Перепланировка</div>
+                        <div class="services__text">Определение перепланировки. Перепланировка жилого помещения— это изменение его конфигурации, требующее внесения изменений в технический паспорт жилого помещения.</div>
+                    </div>
+                    <div class="services__item services__item--border">
+                        <img class="services__icon" src="assets/img/backyard.png" alt="">
+
+                        <div class="services__title">Вынос границ участка</div>
+                        <div class="services__text">Вынос в натуру границ земельных участков, проектов, объектов и зданий является процедурой по идентификации и привязке определенных точек в определенном месте.</div>
+                    </div>
+                    <div class="services__item">
+                        <img class="services__icon" src="assets/img/auction.png" alt="">
+
+                        <div class="services__title">Юридические услуги</div>
+                        <div class="services__text">Услуги правового характера, в том числе предоставление разъяснений и консультаций, подготовка и экспертиза документов, представление интересов заказчиков в судах.</div>
+                    </div>
+                    <div class="services__item">
+                        <img class="services__icon" src="assets/img/floor-plan.png" alt="">
+
+                        <div class="services__title">Технические планы</div>
+                        <div class="services__text">Определение перепланировки. Перепланировка жилого помещения— это изменение его конфигурации, требующее внесения изменений в технический паспорт жилого помещения.</div>
+                    </div>
+                    <div class="services__item">
+                        <img class="services__icon" src="assets/img/growth.png" alt="">
+
+                        <div class="services__title">Установление границ СЗЗ</div>
+                        <div class="services__text">Установление границ СЗЗ (санитарно-защитная зона), подлежащих внесению в Единый государственный реестр недвижимости (далее – ЕГРН).Подготовка в электроном виде документа в XML формате</div>
+                    </div>
+                </div>
+            </section>
+            <section class="paragraph services" id="services">
+                <div>
+                    <h1 class="title-section">Контакты</h1>
+                    <h2 class="subtitle-section">Компания является ведущей в области геодезических измерений в Нижегородской области</h2>
+                </div>
+                <div class="services-body">
+
+
+
+                </div>
+            </section>
         </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/jacascript" src="anim.js"></script>
+    <script type="text/javascript" src="assets/js/anim.js"></script>
     <!-- <script type="text/jacascript" src="scroll.js"></script> -->
 
 </body>
