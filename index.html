@@ -10,27 +10,27 @@
 <body>
     <header class="header" id="header">
         <div class="header-top">
-            <div class="head-contacts logo" ><a href="#" data-scroll = "#main"><span>Geo</span>desist</div></a>
+            <div class="logo" ><a href="#" data-scroll = "#main"><span>Geo</span>desist</div></a>
             <div class="head-contacts">
                 <div>Мы в соцсетях:</div>
                     <a href="http://vk.com"><img src="assets/img/vkontakte.png" alt=""></a> 
                     <a href="http://web.telegram.org/z/"><img src="assets/img/telegram.png" alt=""></a>
                     <a href="http://whatsapp.com"><img src="assets/img/whatsapp.png" alt=""></a>
             </div>
-            <div class="head-tel"><a href="tel:+79991110011"><img src="assets/img/phone-call.png" alt="Phone" width="15px">+79991110011</a></div>
+            <div class="head-tel"><a href="tel:+79991110011"><img src="assets/img/phone-call.svg" alt="Phone" width="15px">+7(999)111-00-11</a></div>
         </div>
-        <nav class="header-bottom scrollto">
-            <a class="nav-link" href="#" data-scroll = "#main">Главная</a>
+        <nav class="header-bottom scrollto"  id="nav">
+            <a class="nav-link nav-active" href="#" data-scroll = "#main">Главная</a>
             <a class="nav-link" href="#" data-scroll = "#about">О нас</a>
             <a class="nav-link" href="#" data-scroll = "#services">Услуги</a>
-            <a class="nav-link" href="#" data-scroll = "#contacts">Контакты</a>
+            <a class="nav-link" href="#" data-scroll = "#contact">Контакты</a>
         </nav>
     </header>
     <main>
         <div class="parall-layer parall-layer-back"><img src="assets/img/Image5.jpg" alt=""></div>
 
         <div class="background-parall parall-layer-base " id="main">
-            <div class="container animate__animated animate__fadeInDown">
+            <div class="title-container animate__animated animate__fadeInDown">
                 <p class="home-text">Геодезическая компания</p>
                 <h1 class="main-page-title"><span>Geo</span>desist</h1>
                 <p class="home-text">Nizhniy Novgorod</p>
@@ -38,106 +38,194 @@
         </div>
 
         <div class="parall-layer parall-layer-base">
-
-            <section class="paragraph about parall-layer-base" id="about">
-                <div>
-                    <h1 class="title-section">О нас</h1>
-                    <h2 class="subtitle-section">Компания является ведущей в области геодезических измерений в Нижегородской области</h2>
-                </div>
-                <ul>
-                    <li class="animate__animated animate__fadeInDown animate__delay-1s">
-                        <img src="assets/img/networking.svg" alt="">
-                        <h3 class="title-about">На рынке с 2005 года</h3>
-                    </li>
-                    <li class="animate__animated animate__fadeInDown animate__delay-1s">
-                        <img src="assets/img/certification.svg" alt="">
-                        <h3 class="title-about">Более 1500 выполненых заказов</h3>
-                    </li>
-                    <li class="animate__animated animate__fadeInDown animate__delay-1s">
-                        <img src="assets/img/guarantee.svg" alt="">
-                        <h3 class="title-about">Гарантия качества и точности измерений</h3>
-                    </li>
-                    <li class="animate__animated animate__fadeInDown animate__delay-1s">
-                        <img src="assets/img/draft.svg" alt="">
-                        <h3 class="title-about">Оперативно предоставляем все необходимые чертежи</h3>
-                    </li>
-                    <li class="animate__animated animate__fadeInDown animate__delay-1s">
-                        <img src="assets/img/customer.svg" alt="">
-                        <h3 class="title-about">Сотни довольных клиентов</h3>
-                    </li>
-                </ul>
-            </section>
-            <section class="paragraph services" id="services">
-                <div>
-                    <h1 class="title-section">Услуги</h1>
-                    <h2 class="subtitle-section">Компания является ведущей в области геодезических измерений в Нижегородской области</h2>
-                </div>
-                <div class="services-body">
-                    <div class="services__item  services__item--border">
-                        <img class="services__icon" src="assets/img/rule.png" alt="">
-
-                        <div class="services__title">Межевание</div>
-                        <div class="services__text">Межевание подразумевает проведение нормативных измерительных мероприятий, целью которых является юридическое закрепление границ земельного участка.</div>
+            <section class="paragraph about" id="about">
+                <div class="container">
+                    <div>
+                        <h1 class="title-section">О нас</h1>
+                        <h2 class="subtitle-section">Компания является ведущей в области геодезических измерений в Нижегородской области</h2>
                     </div>
-                    <div class="services__item  services__item--border">
-                        <img class="services__icon" src="assets/img/camera.png" alt="">
-
-                        <div class="services__title">Топографическая съёмка</div>
-                        <div class="services__text">Топографическая съемка земельного участка – это незаменимый инструмент в составлении пакета проектной документации.</div>
-                    </div>
-                    <div class="services__item  services__item--border">
-                        <img class="services__icon" src="assets/img/measure.png" alt="">
-
-                        <div class="services__title">Строительная геодезия</div>
-                        <div class="services__text">Строительная геодезия – важная группа работ, необходимая для обеспечения качественного строительства объектов различного плана.</div>
-                    </div>
-                    <div class="services__item services__item--border">
-                        <img class="services__icon" src="assets/img/hotel.png" alt="">
-
-                        <div class="services__title">Инженерные изыскания</div>
-                        <div class="services__text">Это комплекс работ по изучению объекта строительства на предмет природных и техногенных качеств с составлением заключения о прогнозированном взаимодействии окружающих факторов с объектом.</div>
-                    </div>
-                    <div class="services__item services__item--border">
-                        <img class="services__icon" src="assets/img/floor-plan.png" alt="">
-
-                        <div class="services__title">Перепланировка</div>
-                        <div class="services__text">Определение перепланировки. Перепланировка жилого помещения— это изменение его конфигурации, требующее внесения изменений в технический паспорт жилого помещения.</div>
-                    </div>
-                    <div class="services__item services__item--border">
-                        <img class="services__icon" src="assets/img/backyard.png" alt="">
-
-                        <div class="services__title">Вынос границ участка</div>
-                        <div class="services__text">Вынос в натуру границ земельных участков, проектов, объектов и зданий является процедурой по идентификации и привязке определенных точек в определенном месте.</div>
-                    </div>
-                    <div class="services__item">
-                        <img class="services__icon" src="assets/img/auction.png" alt="">
-
-                        <div class="services__title">Юридические услуги</div>
-                        <div class="services__text">Услуги правового характера, в том числе предоставление разъяснений и консультаций, подготовка и экспертиза документов, представление интересов заказчиков в судах.</div>
-                    </div>
-                    <div class="services__item">
-                        <img class="services__icon" src="assets/img/floor-plan.png" alt="">
-
-                        <div class="services__title">Технические планы</div>
-                        <div class="services__text">Определение перепланировки. Перепланировка жилого помещения— это изменение его конфигурации, требующее внесения изменений в технический паспорт жилого помещения.</div>
-                    </div>
-                    <div class="services__item">
-                        <img class="services__icon" src="assets/img/growth.png" alt="">
-
-                        <div class="services__title">Установление границ СЗЗ</div>
-                        <div class="services__text">Установление границ СЗЗ (санитарно-защитная зона), подлежащих внесению в Единый государственный реестр недвижимости (далее – ЕГРН).Подготовка в электроном виде документа в XML формате</div>
-                    </div>
+                    <ul class="about-container">
+                        <li class="card-body animate__animated animate__fadeInDown animate__delay-1s">
+                            <div class="card-inner">
+                                <img src="assets/img/networking.svg" alt="">
+                                <h3 class="title-about">На рынке с 2005 года</h3>
+                            </div>
+                        </li>
+                        <li class="card-body animate__animated animate__fadeInDown animate__delay-1s">
+                            <img src="assets/img/certification.svg" alt="">
+                            <h3 class="title-about">Более 1000 выполненых заказов</h3>
+                        </li>
+                        <li class="card-body animate__animated animate__fadeInDown animate__delay-1s">
+                            <img src="assets/img/guarantee.svg" alt="">
+                            <h3 class="title-about">Гарантия качества и точности измерений</h3>
+                        </li>
+                        <li class="card-body animate__animated animate__fadeInDown animate__delay-1s">
+                            <img src="assets/img/customer.svg" alt="">
+                            <h3 class="title-about">Сотни довольных клиентов</h3>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="paragraph services" id="services">
-                <div>
-                    <h1 class="title-section">Контакты</h1>
-                    <h2 class="subtitle-section">Компания является ведущей в области геодезических измерений в Нижегородской области</h2>
+                <div class="container">
+                    <div>
+                        <h1 class="title-section">Услуги</h1>
+                        <h2 class="subtitle-section">Предоставляем больше 20 услуг геодезии</h2>
+                    </div>
+                    <div class="services-body">
+                        <div class="services__item  services__item--border">
+                            <img class="services__icon" src="assets/img/rule.png" alt="">
+
+                            <div class="services__title">Межевание</div>
+                            <div class="services__text">Межевание подразумевает проведение нормативных измерительных мероприятий, целью которых является юридическое закрепление границ земельного участка.</div>
+                        </div>
+                        <div class="services__item  services__item--border">
+                            <img class="services__icon" src="assets/img/camera.png" alt="">
+
+                            <div class="services__title">Топографическая съёмка</div>
+                            <div class="services__text">Топографическая съемка земельного участка – это незаменимый инструмент в составлении пакета проектной документации.</div>
+                        </div>
+                        <div class="services__item  services__item--border">
+                            <img class="services__icon" src="assets/img/measure.png" alt="">
+
+                            <div class="services__title">Строительная геодезия</div>
+                            <div class="services__text">Строительная геодезия – важная группа работ, необходимая для обеспечения качественного строительства объектов различного плана.</div>
+                        </div>
+                        <div class="services__item services__item--border">
+                            <img class="services__icon" src="assets/img/hotel.png" alt="">
+
+                            <div class="services__title">Инженерные изыскания</div>
+                            <div class="services__text">Это комплекс работ по изучению объекта строительства на предмет природных и техногенных качеств с составлением заключения о прогнозированном взаимодействии окружающих факторов с объектом.</div>
+                        </div>
+                        <div class="services__item services__item--border">
+                            <img class="services__icon" src="assets/img/floor-plan.png" alt="">
+
+                            <div class="services__title">Перепланировка</div>
+                            <div class="services__text">Определение перепланировки. Перепланировка жилого помещения— это изменение его конфигурации, требующее внесения изменений в технический паспорт жилого помещения.</div>
+                        </div>
+                        <div class="services__item services__item--border">
+                            <img class="services__icon" src="assets/img/backyard.png" alt="">
+
+                            <div class="services__title">Вынос границ участка</div>
+                            <div class="services__text">Вынос в натуру границ земельных участков, проектов, объектов и зданий является процедурой по идентификации и привязке определенных точек в определенном месте.</div>
+                        </div>
+                        <div class="services__item">
+                            <img class="services__icon" src="assets/img/auction.png" alt="">
+
+                            <div class="services__title">Юридические услуги</div>
+                            <div class="services__text">Услуги правового характера, в том числе предоставление разъяснений и консультаций, подготовка и экспертиза документов, представление интересов заказчиков в судах.</div>
+                        </div>
+                        <div class="services__item">
+                            <img class="services__icon" src="assets/img/floor-plan.png" alt="">
+
+                            <div class="services__title">Технические планы</div>
+                            <div class="services__text">Определение перепланировки. Перепланировка жилого помещения— это изменение его конфигурации, требующее внесения изменений в технический паспорт жилого помещения.</div>
+                        </div>
+                        <div class="services__item">
+                            <img class="services__icon" src="assets/img/growth.png" alt="">
+
+                            <div class="services__title">Установление границ СЗЗ</div>
+                            <div class="services__text">Установление границ СЗЗ (санитарно-защитная зона), подлежащих внесению в Единый государственный реестр недвижимости (далее – ЕГРН).Подготовка в электроном виде документа в XML формате</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="services-body">
+            </section>    
+            <section class="paragraph contact" id="contact">
+                <div class="container">
+                    <div>
+                        <h1 class="title-section">Контакты</h1>
+                        <h2 class="subtitle-section">Компания является ведущей в области геодезических измерений в Нижегородской области</h2>
+                    </div>
+                    <div class="contact-container">
+                        <a class="contact-inner contact-description" href="https://goo.gl/maps/7vQ3DMHPiLqRWVX6A" target="_blank">
+                            <div class="contact-picture">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035
+                                                c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719
+                                                c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="contact-description">г. Нижний Новгород,<br>ул. Алексеевская, 10/16</div>
+                        </a>
+                        <a class="contact-inner contact-description" href="https://goo.gl/maps/7vQ3DMHPiLqRWVX6A" target="_blank">
+                            <div class="contact-picture">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <polygon points="339.392,258.624 512,367.744 512,144.896 		"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="0,144.896 0,367.744 172.608,258.624 		"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+                                                L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="contact-description" href="mailto:index@geodesist.ru">index@geodesist.ru</div>
+                        </a>
+                        <a class="contact-inner contact-description" href="https://goo.gl/maps/7vQ3DMHPiLqRWVX6A" target="_blank">
+                            <div class="contact-picture">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 513.64 513.64">
+                                    <g>
+                                        <g>
+                                            <path d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72
+                                                c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68
+                                                c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44
+                                                l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z"/>
+                                        </g>
+                                    </g>
+                                </svg>
 
-
-
+                            </div>
+                            <div class="contact-description" href="tel:+79991110011">+7(999)111-00-11</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="paragraph map-body" id="map">
+                    <div class="map">
+                        <h2 class="map__title">
+                            <div><i class="fas fa-map-marker-alt"></i></div>
+                            <a href="https://goo.gl/maps/7vQ3DMHPiLqRWVX6A" target="_blank">Open Map</a>
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <section class="paragraph contact" id="message">
+                <div class="container">
+                    <div>
+                        <h1 class="title-section">Задать вопрос</h1>
+                        <h2 class="subtitle-section">Компания является ведущей в области геодезических измерений в Нижегородской области</h2>
+                    </div>
+                    <div class="contact-body" id="contact">
+                        <div class="form">
+                            <form  class="contact-form" name="contactform" id="contact-form">
+                                <div class="form-input">
+                                    <input class="input lil-input" type="text" placeholder="Имя" name="name" id="name">
+                                    <input class="input lil-input" type="text" placeholder="Email" name="email" id="email">
+                                </div>
+                                <div class="form-input">
+                                    <textarea class="input message" placeholder="Сообщение" name="comments" id="comments"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-round"  id="submit">Связаться</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

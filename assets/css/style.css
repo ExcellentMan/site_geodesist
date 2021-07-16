@@ -29,7 +29,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header-top {
     width: 100vw;
-    min-width: 650px;
     height: 40px;
 
     padding-right: 50px;
@@ -47,6 +46,8 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: bold;
     font-size: 30px;
     text-transform: uppercase;
+    
+    display: flex;
 }
 
 .logo a {
@@ -57,9 +58,6 @@ h1, h2, h3, h4, h5, h6, p {
 .logo span {
     color: red;
 }
-
-
-
 
 .head-contacts {
     display: flex;
@@ -114,6 +112,9 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 10;
 }
 
+.nav-active {
+    color: red;
+}
 
 /* ======= Body ======= */
 
@@ -138,7 +139,6 @@ main {
 .background-parall {
     width: 100%; 
     height: 100vh;
-    min-width: 650px;
     background: url(../img/Image1.jpg) no-repeat left;
     background-size: cover;
 
@@ -179,17 +179,31 @@ main {
 
 .paragraph {
     width: 100%; 
-
-    padding-bottom: 50px;
-
+    
+    background-color: #fff;
     /* background-color: rgb(161, 161, 161); */
 }
+
+.paragraph:nth-child(odd) {
+    background-color: rgb(250, 250, 250)
+}
+
+.paragraph:nth-child(1){
+    background: none;
+}
+
 
 
 
 /* ======= PRE section ======= */
 
 .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 15px 0;
+    margin: auto;
+}
+.title-container {
     position: absolute;
     top: 50%;
     left: 0;
@@ -225,7 +239,7 @@ main {
 
 
 
-/* ======= 1st section ======= */
+/* ======= 1st section Title ======= */
 
 .title-section {
     text-align: center;
@@ -250,45 +264,44 @@ main {
     margin-bottom: 30px;
 }
 
+.about {
+    width: 100%;
+    max-width: 1200px;
 
-.about ul {
+    margin: 50px auto;
+}
+
+.about-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:space-around;
-    padding: 0 20;
+    justify-content: space-around;
+    padding: 0;
 
 }
 
-.about li {
+.card-body {
     width: 200px;
     height: 250px;
     min-width: 120px;
 
     padding: 25 15;
 
-    margin: 10;
+    margin: 15px;
 
     flex-basis: 15%;
-    
-    text-align: center;
     list-style-type: none;
-    vertical-align: middle;
-
     border-radius: 10px;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
-.about li:nth-child(odd) {
+.card-body:nth-child(odd) {
     border: black solid 1px;
     background-color: rgba(255, 67, 67, 0.144);
     backdrop-filter: blur(10px);
 }
 
-.about li:nth-child(even) {
+.card-body:nth-child(even) {
     border: black solid 1px;
     background-color: rgba(67, 186, 255, 0.144);
     backdrop-filter: blur(10px);
@@ -296,20 +309,29 @@ main {
 }
 
 .about img {
+    display: block;
+    margin: auto;
     width: 5vw;
 }
 
+.card-inner {
+    display: block;
+    width: 100%;
+}
+
 .title-about {
+    display: inline-block;
     font-size: 14px;
     font-weight: bold;
+    text-align: center;
 
-    padding: 30 0;
+    padding-top: 30px;
 }
 
 
 
 
-/* ======= 2nd section ======= */
+/* ======= 2nd section Services ======= */
 
 .services {
     background-color: rgb(255, 255, 255);
@@ -319,13 +341,16 @@ main {
 .services-body {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .services__item {
     width: 33.33333%;
     padding: 0 35px 40px 85px;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+
+    
 }
 
 .services__item--border {
@@ -351,6 +376,168 @@ main {
 .services__text {
     font-size: 15px;
     color: #999;
+
+    padding-bottom: 10px;
+}
+
+
+/* ======= 3rd section Contacts ======= */
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-inner {
+    display: inline;
+    width: 33.333333%;
+    min-width: 200px;
+    text-align: center;
+}
+
+.contact-picture {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: red;
+    position: relative;
+}
+
+.contact-picture svg {
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    width: 50%;
+    fill: #fff;
+}
+
+.contact-description {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+
+    margin: 40px 0;
+}
+
+            /* Map */
+.map {
+    text-align: center;
+}
+
+.map-body {
+    padding: 40px 0;
+    background: #e6e6e6 url("../img/map-bg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.map__title {
+    font-size: 24px;
+    color: #f38181;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.map__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 15px auto 0;
+
+    background-color: #f38181;
+}
+
+.map__title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.map__title a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* ======= 4th section Contacts ======= */
+
+.contact-body {
+    width: 100%;
+    max-width: 1200px;
+    
+    margin: 50px auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-input {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    padding: 10px 0 10px 15px;
+    width: 100%;
+    display: block;
+    outline: none;
+
+
+    font-family: Helvetica, sans-serif;
+    color: #bdbdbd;
+    transition: border .2s linear;
+}
+
+.lil-input {
+    margin-top: 35px;
+}
+
+.message {
+    height: 100%;
+    resize: none;
+    overflow: auto;
+}
+
+.input:focus {
+    border-bottom: 1px solid #000;
+}
+
+.btn {
+    margin-top: 50px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 30px;
+    background-color: red;
+    
+    border-radius: 3px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background-color .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+.btn:active {
+    background-color: #999;
 }
 
 
@@ -362,6 +549,7 @@ main {
 
 /*=========== Media ===========*/
 
+
 @media (max-width:770px) {
     .parall-layer-back img {
     left: -15%;
@@ -369,9 +557,88 @@ main {
     width: 170%;
     }
 
+    .services__item {
+        padding: 0px 20px 0px 65px;
+    }
+}
 
-    .about li {
+@media (max-width:700px) {
+    .services__text {
+        display: none;
+    }
 
+    .head-contacts, .head-tel {
+        display: none;
+    }
+
+    .header-top {
+        justify-content: space-around;
+    }
+
+    .parall-layer-back img {
+        left: -15%;
+        top: -22vh;
+        width: 170%;
+        }
+}
+
+
+@media (max-width:600px) {
+
+    .header-top {
+        height: 30px;
+    }
+
+    .header-bottom{
+        height: 40px;
+    }
+
+
+
+    .card-body {
+        width: 50%;
+        flex-basis: 30%;
+    }
+
+    /* services */
+
+    .services__item--border {
+        border: none;
+    }
+
+    .services__item {
+        width: 100%;
+        max-width: 300px
+    }
+
+
+    /* contact */
+    .contact-inner {
+        width: 100%;
+    }
+
+    .contact-picture {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+
+    .contact-description {
+        margin: 20px 0;
+    }
+}
+
+
+    
+
+@media (max-width:450px) {
+
+    .home-text {
+        letter-spacing: 3px;
+    }
+
+    .main-page-title {
+        font-size: 35px;
     }
 
 }
