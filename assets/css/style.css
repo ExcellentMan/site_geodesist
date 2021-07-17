@@ -116,34 +116,18 @@ h1, h2, h3, h4, h5, h6, p {
     color: red;
 }
 
+
 /* ======= Body ======= */
 
-main {
-    height: 500px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-perspective: 300px;
-    perspective: 300px;
-}
 
-.parall-layer {
-    position: absolute;
-    top: 100vh;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-
-.background-parall {
+.main_section {
     width: 100%; 
     height: 100vh;
     background: url(../img/Image1.jpg) no-repeat left;
     background-size: cover;
-
 }
-.background-parall::before {
+
+.main_section::before {
     content: "";
     width: 100%; 
     height: 100%;
@@ -153,8 +137,20 @@ main {
     backdrop-filter: blur(10px) brightness(60%);
 
 }
+/* 
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+} */
 
-
+/* 
+.parall-layer {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 
 .parall-layer-base {
     -webkit-transform: translateZ(0);
@@ -169,22 +165,21 @@ main {
   }
 
   .parall-layer-back img {
-      min-width: 1000px;
+    min-width: 1000px;
     position: absolute;
     top: -20vh;
-    /* left: -15%; */
     width: 100%;
     background-size: cover;
   }
 
+
+ */
 .paragraph {
     width: 100%; 
-    
     background-color: #fff;
-    /* background-color: rgb(161, 161, 161); */
 }
 
-.paragraph:nth-child(odd) {
+.paragraph:nth-child(even) {
     background-color: rgb(250, 250, 250)
 }
 
@@ -241,6 +236,13 @@ main {
 
 /* ======= 1st section Title ======= */
 
+.paroller {
+    background-image: url(../img/Image5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .title-section {
     text-align: center;
     padding: 20;
@@ -268,7 +270,7 @@ main {
     width: 100%;
     max-width: 1200px;
 
-    margin: 50px auto;
+    margin: auto;
 }
 
 .about-container {
@@ -278,6 +280,13 @@ main {
     justify-content: space-around;
     padding: 0;
 
+}
+
+.about img {
+    display: block;
+    margin: auto;
+    width: 5vw;
+    min-width: 50px;
 }
 
 .card-body {
@@ -308,11 +317,7 @@ main {
    
 }
 
-.about img {
-    display: block;
-    margin: auto;
-    width: 5vw;
-}
+
 
 .card-inner {
     display: block;
@@ -362,7 +367,6 @@ main {
     position: absolute;
     top: 0;
     left: 28px;
-    z-index: 1;
 }
 
 .services__title {
@@ -499,19 +503,24 @@ main {
     transition: border .2s linear;
 }
 
+.input:focus {
+    border-bottom: 1px solid #000;
+}
+
 .lil-input {
     margin-top: 35px;
 }
 
+.lil-input:nth-child(1) {
+    margin-top: 0;
+}
 .message {
     height: 100%;
     resize: none;
     overflow: auto;
 }
 
-.input:focus {
-    border-bottom: 1px solid #000;
-}
+
 
 .btn {
     margin-top: 50px;

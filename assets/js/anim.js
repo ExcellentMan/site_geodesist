@@ -10,11 +10,12 @@ $(function() {
     $("#nav a").removeClass("nav-active");
     $this.addClass("nav-active");
 
-    $("main").animate({
+    $("html, body").animate({
       scrollTop: blockOffset-100
     }, 500);
 
   });
 });
 
-$('.parallax-window').parallax({imageSrc: 'assets/img/Image5.jpg'});
+//b) initialize paroller.js and set attributes 
+$(".paroller").paroller({ factor: 0.5, factorXs: 0.2, factorSm: 0.3,});  
