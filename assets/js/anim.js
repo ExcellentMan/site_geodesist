@@ -16,3 +16,5 @@ $(function() {
 
   });
 });
+
+$('.parallax-window').parallax({imageSrc: 'assets/img/Image5.jpg'});
