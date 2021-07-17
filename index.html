@@ -18,12 +18,15 @@
                     <a href="http://whatsapp.com"><img src="assets/img/whatsapp.png" alt=""></a>
             </div>
             <div class="head-tel"><a href="tel:+79991110011"><img src="assets/img/phone-call.svg" alt="Phone" width="15px">+7(999)111-00-11</a></div>
+            <button class="nav_toggle" id="nav_toggle">
+                <span class="nav_toggle_item"></span>
+            </button>
         </div>
         <nav class="header-bottom scrollto"  id="nav">
-            <a class="nav-link nav-active" href="#" data-scroll = "#main">Главная</a>
-            <a class="nav-link" href="#" data-scroll = "#about">О нас</a>
-            <a class="nav-link" href="#" data-scroll = "#services">Услуги</a>
-            <a class="nav-link" href="#" data-scroll = "#contact">Контакты</a>
+            <a class="nav-link" id="main_a" href="#" data-scroll = "#main">Главная</a>
+            <a class="nav-link" id="about_a" href="#" data-scroll = "#about">О нас</a>
+            <a class="nav-link" id="services_a" href="#" data-scroll = "#services">Услуги</a>
+            <a class="nav-link" id="contact_a" href="#" data-scroll = "#contact">Контакты</a>
         </nav>
     </header>
     <main>
@@ -34,8 +37,8 @@
                 <p class="home-text">Nizhniy Novgorod</p>
             </div>
         </section>
-        <section class="paragraph paroller">
-            <div class="about" id="about">
+        <section class="paragraph paroller" id="about">
+            <div class="about">
             <div class="container">
                 <div>
                     <h1 class="title-section">О нас</h1>
@@ -149,7 +152,7 @@
                         </div>
                         <div class="contact-description">г. Нижний Новгород,<br>ул. Алексеевская, 10/16</div>
                     </a>
-                    <a class="contact-inner contact-description" href="https://goo.gl/maps/7vQ3DMHPiLqRWVX6A" target="_blank">
+                    <a class="contact-inner contact-description" href="mailto:index@geodesist.ru" target="_blank">
                         <div class="contact-picture">
                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
                                 <g>
@@ -177,7 +180,7 @@
                         </div>
                         <div class="contact-description" href="mailto:index@geodesist.ru">index@geodesist.ru</div>
                     </a>
-                    <a class="contact-inner contact-description" href="https://goo.gl/maps/7vQ3DMHPiLqRWVX6A" target="_blank">
+                    <a class="contact-inner contact-description" href="tel:+79991110011" target="_blank">
                         <div class="contact-picture">
                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 513.64 513.64">
                                 <g>
@@ -228,11 +231,9 @@
         </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="assets/js/parallax.js"></script>
-
+    
     <script src="assets/js/jquery.paroller.js"></script>
+
     <script type="text/javascript" src="assets/js/anim.js"></script>
     <!-- <script type="text/jacascript" src="scroll.js"></script> -->
 

@@ -18,7 +18,6 @@ h1, h2, h3, h4, h5, h6, p {
 /* ======= Head ======= */
 
 .header {
-    min-width: 500px;
     position: fixed;
     top: 0;
     left: 0;
@@ -46,8 +45,6 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: bold;
     font-size: 30px;
     text-transform: uppercase;
-    
-    display: flex;
 }
 
 .logo a {
@@ -85,11 +82,85 @@ h1, h2, h3, h4, h5, h6, p {
     width: 25px;
     height: 25px;
 }
+
+/* Nav toggle */
+
+.nav_toggle {
+    width: 30px;
+    padding: 10px 0;
+
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    z-index: 1;
+    display: none;
+}
+
+
+
+.nav_toggle_item {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #000;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: background .2s linear;
+}
+
+.nav_toggle.active .nav_toggle_item {
+    background: none;
+}
+
+
+.nav_toggle_item::before,
+.nav_toggle_item::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+
+    background: #000;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+
+    transition: transform .2s linear;
+}
+
+.nav_toggle.active .nav_toggle_item::before {
+    transform-origin: left top;
+    transform: rotate(45deg) translateY(-3px);
+}
+
+.nav_toggle.active .nav_toggle_item::after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translateY(3px);
+}
+
+.nav_toggle_item::before {
+    top: -8px;
+}
+
+.nav_toggle_item::after {
+    bottom: -8px;
+}
+
+
 /* ======= Head Bottom ======= */
 .header-bottom {
     width: 100vw;
     height: 60px;
-    min-width: 550px;
 
     padding-right: 50px;
     padding-left: 50px;
@@ -100,6 +171,7 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content:center;
     align-items: center;
 }
+
 
 .nav-link {
     color: black;
@@ -112,7 +184,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 10;
 }
 
-.nav-active {
+.nav-active, .nav-link:hover {
     color: red;
 }
 
@@ -137,43 +209,7 @@ h1, h2, h3, h4, h5, h6, p {
     backdrop-filter: blur(10px) brightness(60%);
 
 }
-/* 
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
-} */
 
-/* 
-.parall-layer {
-    position: absolute;
-    top: 100vh;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-.parall-layer-base {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-
-.parall-layer-back {
-    -webkit-transform: translateZ(-300px) scale(2);
-    transform: translateZ(-300px) scale(2);
-    z-index: -1;
-
-  }
-
-  .parall-layer-back img {
-    min-width: 1000px;
-    position: absolute;
-    top: -20vh;
-    width: 100%;
-    background-size: cover;
-  }
-
-
- */
 .paragraph {
     width: 100%; 
     background-color: #fff;
@@ -580,6 +616,33 @@ h1, h2, h3, h4, h5, h6, p {
         display: none;
     }
 
+    .header-bottom {
+        display: none;
+        position: absolute;
+        
+        height: auto;
+        width: 100%;
+        top: 100%;
+        left: 0;
+
+        background-color: #fff;
+        
+    }
+
+    .header-bottom.active {
+        display: block;
+    }
+    .nav-link {
+        display: block;
+        margin: 0;
+        padding: 15px 40px;
+        text-align: center;
+    }
+
+    .nav_toggle {
+        display: block;
+    }
+
     .header-top {
         justify-content: space-around;
     }
@@ -593,16 +656,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 @media (max-width:600px) {
-
-    .header-top {
-        height: 30px;
-    }
-
-    .header-bottom{
-        height: 40px;
-    }
-
-
 
     .card-body {
         width: 50%;
