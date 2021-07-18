@@ -3,6 +3,8 @@ $(".paroller").paroller({ factor: 0.5, factorXs: 0.2, factorSm: 0.1,});
 
 $(function() {
 
+// Painting upon reaching ============
+
   var   headerHeight = $("#header").height();
         mainH = $("#main").offset().top,
         aboutH = $("#about").offset().top,
@@ -40,6 +42,7 @@ $(function() {
             }}}}
      }
 
+// Scroll to anchor ============
 
   $("[data-scroll]").on("click", function(event) {
     event.preventDefault();
@@ -49,32 +52,38 @@ $(function() {
         blockOffset = $(blockId).offset().top,
         headerHeight = $("#header").height();
 
-    $("#nav a").removeClass("nav-active");
+    // $("#nav a").removeClass("nav-active");
     
 
     $("html, body").animate({
       scrollTop: blockOffset-headerHeight
     }, 500);
-    $this.addClass("nav-active");
+    // $this.addClass("nav-active");
+    $("#nav_toggle").removeClass("active");
+    $("#nav").removeClass("active");
   });
 
 
+  // Telephone burger menu ============
+
+  // burger menu active ============
+  
   /* Menu nav toggle */
   $("#nav_toggle").on("click", function(event) {
     event.preventDefault();
 
     $(this).toggleClass("active");
     $("#nav").toggleClass("active");
+
   });
 
-
+// burger menu deactivated ============
 
   /* Collapse */
   $("[data-collapse]").on("click", function(event) {
     event.preventDefault();
 
-    var $this = $(this),
-        blockId = $this.data('collapse');
+    var $this = $(this);
 
     $this.toggleClass("active");
   });
