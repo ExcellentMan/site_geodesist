@@ -327,10 +327,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 .card-body {
     width: 200px;
-    height: 250px;
+    height: 200px;
     min-width: 120px;
 
-    padding: 25 15;
+    padding: 20 15;
 
     margin: 15px;
 
@@ -588,9 +588,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ======= Footer ======= */
 
+.footer {
+    padding: 10px 0;
+    background-color: #000;
+}
 
-
-
+.footer_inner {
+    color: #fff;
+    text-align: center;
+}
 
 /*=========== Media ===========*/
 
