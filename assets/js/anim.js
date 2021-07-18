@@ -99,7 +99,7 @@ $(".paroller").paroller({ factor: 0.5, factorXs: 0.2, factorSm: 0.1,});
 
 AOS.init({
   // Global settings:
-  disable: 'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
   offset: 100, // offset (in px) from the original trigger point

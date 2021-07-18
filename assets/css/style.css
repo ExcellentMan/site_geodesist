@@ -588,9 +588,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ======= Footer ======= */
 
+.footer {
+    padding: 10px 0;
+    background-color: #000;
+}
 
-
-
+.footer_inner {
+    color: #fff;
+    text-align: center;
+}
 
 /*=========== Media ===========*/
 
